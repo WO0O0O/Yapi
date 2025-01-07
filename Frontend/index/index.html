@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapi - Learn Nepali Language</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">Yapi</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Flashcards</a>
+            <a href="#">Practice</a>
+            <a href="#">About</a>
+        </div>
+        <div class="nav-auth">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-title">Yap away in Nepali, the modern way</h1>
+                <p class="animate-subtitle">Master Nepali language with interactive flashcards and immersive learning through our AI chatbot</p>
+                <div class="cta-buttons">
+                    <a href="../dashboard/dashboard.html" class="start-btn">Get Started <i class="fas fa-arrow-right"></i></a>
+                    <button class="demo-btn">Try Demo</button>
+                </div>
+            </div>
+            <div class="floating-cards">
+                <div class="floating-card card1" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>नमस्ते</p>
+                            <span>Namaste</span>
+                        </div>
+                        <div class="card-back">
+                            <p>Hello</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card2" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>धन्यवाद</p>
+                            <span>Dhanyavaad</span>
+                        </div>
+                        <div class="card-back">
+                            <p>Thank you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card3" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <p>स्वागत छ</p>
+                            <span>Swagat Chha</span>
+                        </div>
+                        <div class="card-back">
+                            <p>Welcome</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Quick Learning</h3>
+                    <p>Master basic phrases in minutes with our interactive flashcards</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Smart Review</h3>
+                    <p>AI-powered spaced repetition for optimal retention</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Learn Anywhere</h3>
+                    <p>Practice on any device, anytime, anywhere</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Join a community of Nepali language enthusiasts</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapi - Flashcard Testing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Flashcard Creation Section -->
+        <div class="create-section">
+            <h2>Create Flashcard</h2>
+            <div class="input-group">
+                <input type="text" id="nepali-text" placeholder="Nepali Text">
+                <input type="text" id="pronunciation" placeholder="Pronunciation">
+                <input type="text" id="english-text" placeholder="English Translation">
+                <button id="add-card" class="primary-btn">
+                    <i class="fas fa-plus"></i> Add Card
+                </button>
+            </div>
+        </div>
+
+        <!-- Flashcard Display Section -->
+        <div class="flashcards-section">
+            <h2>Your Flashcards</h2>
+            <div class="controls">
+                <button id="prev-card" class="control-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div id="card-container">
+                    <!-- Sample Card Structure -->
+                    <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p class="nepali">नमस्ते</p>
+                                <span class="pronunciation">Namaste</span>
+                            </div>
+                            <div class="card-back">
+                                <p class="english">Hello</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next-card" class="control-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
